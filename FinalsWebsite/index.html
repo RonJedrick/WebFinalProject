@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Literary Escape</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="website icon" type="png" href="logo-white.png">
+        <script src="app.js"></script>
+        <script type="text/javascript">
+            function msg() {
+                alert("Your Connection is not Private! Go back to Safety!")
+            }
+        </script>
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="home.html">Literary Escape</a></div>
+            <div class="search">
+                <input type="search" name="search" id="">
+                <ion-icon class="s" name="search"></ion-icon>
+            </div>
+            <div class="heading">
+                <ul>
+                    <li><a href="home.html" class="under">HOME</a></li>
+                    <li><a href="index.html" class="active">SHOP</a></li>
+                    <li><a href="#CONTACT" class="under">CONTACTS</a></li>
+                    <li><a href="aboutus.html" class="under">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class=" heading1">
+                <button class=" menu">Menu</button>
+                <div class="ham">
+                  <a href="home.html">HOME</a>
+                  <a href="index.html">SHOP</a>
+                  <a href="#CONTACT">CONTACTS</a>
+                  <a href="aboutus.html">ABOUT US</a>
+                </div>
+            </div>
+           
+        </header>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <h3>Total: <span id="total"></span></h3>
+            <form>
+                 <input type="text"action="button"value="Proceed to Checkout" onclick="msg()"> 
+                </form>
+
+        </div> 
+        <section>
+            <div class="section">
+                <div class="section1">
+                    <div class="img-slider">
+                        <img src="https://bamreviewsonline.files.wordpress.com/2019/03/a325b459-575a-4139-a82c-680334cb1c52.jpg?w=640"  alt="books">
+
+                        <img src="https://ph-test-11.slatic.net/p/9253a771de03ba15982e78682de46a24.jpg"  alt="book">
+
+                        <img src="https://static-01.daraz.pk/p/fd3dbb81a0f324c030152920122f31a1.jpg"  alt="book">
+
+                        <img src="https://i0.wp.com/kura.rw/wp-content/uploads/2023/03/b555327c44b33e14364a19d96bfa57fb.jpg?fit=1080%2C1350&ssl=1" alt="book">
+
+                        <img src="https://media.karousell.com/media/photos/products/2023/1/24/the_strength_in_our_scars_by_b_1674548341_d465dcc0_progressive.jpg" alt="book">
+
+                        <img src="https://media.licdn.com/dms/image/C4D12AQGI_inLmiSBbQ/article-cover_image-shrink_720_1280/0/1643646762274?e=2147483647&v=beta&t=sWuJOcVDRLfdFfOPgUmnvcqp1vXnbed3fXQyjxxxfXI"  alt="book">
+
+                        <img src="https://cf.shopee.ph/file/95c784c93615f671441a962cf6cee0e3"  alt="book">
+
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653451480i/61163114.jpg"  alt="book">
+
+                        <img src="https://prh.imgix.net/articles/percy-jackson-universe.png"  alt="book">
+
+                        <img src="https://lzd-img-global.slatic.net/g/ff/kf/S6befb00e130c41f0b0a6461f25a3452eY.jpg_720x720q80.jpg_.webp"  alt="book">
+
+                    </div>
+                </div>
+                <div class="section2" id="items">
+                    <div class="container">
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://bamreviewsonline.files.wordpress.com/2019/03/a325b459-575a-4139-a82c-680334cb1c52.jpg?w=640"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">2Am Thoughts</div>
+                            <div class="price">$5</div>
+                            <div class="info">
+                                Author: Makenzie Campbell<br>
+                                <input type="number" id="quantity-1" value="1" min="1">
+                                <button class="add-to-cart" onclick="addToCart({name: '2AM Thoughts', price: 5, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>
+                            </div>
+
+                        </div>
+                        <div class="items">
+                            <div class="img img2">
+                                <img
+                                    src="https://ph-test-11.slatic.net/p/9253a771de03ba15982e78682de46a24.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">A Gentle Reminder</div>
+                            <div class="price">$4</div>
+                            <div class="info">Author: Biance Sparacino</div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'A Gentle Reminder', price: 4, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>  
+                        </div>
+                        <div class="items">
+                            <div class="img img3">
+                                <img
+                                    src="https://static-01.daraz.pk/p/fd3dbb81a0f324c030152920122f31a1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">101 Essays That Will Change The Way You Think</div>
+                            <div class="price">$10</div>
+                            <div class="info">Author: Briana Wiest</div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: '101 Essays That Will Change The Way You Think', price: 10, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://i0.wp.com/kura.rw/wp-content/uploads/2023/03/b555327c44b33e14364a19d96bfa57fb.jpg?fit=1080%2C1350&ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">Ikigai</div>
+                            <div class="price">$10</div>
+                            <div class="info">Authors: Hector Garcias and Francesc Miralles</div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'Ikigai', price: 10, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://media.karousell.com/media/photos/products/2023/1/24/the_strength_in_our_scars_by_b_1674548341_d465dcc0_progressive.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">The Strength in our Scars</div>
+                            <div class="price">$5</div>
+                            <div class="info">Author: Biance Sparacino</div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'The Strength in our Scars', price: 5, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>    
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://media.licdn.com/dms/image/C4D12AQGI_inLmiSBbQ/article-cover_image-shrink_720_1280/0/1643646762274?e=2147483647&v=beta&t=sWuJOcVDRLfdFfOPgUmnvcqp1vXnbed3fXQyjxxxfXI"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">Atomic Habits</div>
+                            <div class="price">$8</div>
+                            <div class="info">
+                                Author: James Clear
+                            </div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'Atomic Habits', price: 8, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>    
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://cf.shopee.ph/file/95c784c93615f671441a962cf6cee0e3"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">The Subtle Art of not Giving a Fuck</div>
+                            <div class="price">$10</div>
+                            <div class="info">Author: James Clear</div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'The Subtle Art of Not Giving a Fuck', price: 10, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>    
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653451480i/61163114.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">The Beginning After The End</div>
+                            <div class="price">$10</div>
+                            <div class="info">
+                                Author: Turtle Me
+                            </div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'The Beginning After The End', price: 10, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>    
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://prh.imgix.net/articles/percy-jackson-universe.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">Percy Jackson</div>
+                            <div class="price">$10</div>
+                            <div class="info">
+                                Author: Rick Riordan
+                            </div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'Percy Jackson', price: 10, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>   
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img
+                                    src="https://lzd-img-global.slatic.net/g/ff/kf/S6befb00e130c41f0b0a6461f25a3452eY.jpg_720x720q80.jpg_.webp"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="name">Everything You'll Ever Neeed</div>
+                            <div class="price">$5</div>
+                            <div class="info">
+                                Author: Charlotte Freeman
+                            </div>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                            <button class="add-to-cart" onclick="addToCart({name: 'Everything You ll ever need', price: 5, quantity: parseInt(document.getElementById('quantity-1').value)})">Add to Cart</button>>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="CONTACT">
+            <div class="footer1">
+                Connect with us at
+                <div class="social-media">
+                    <a href="https://web.facebook.com/jedrick.sabado/"> <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/_ronjedrick"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                    <a href="https://www.instagram.com/_ronjedrick/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer3">
+                Copyright ©
+                <h4>Literary Escape</h4>
+                2021-2023
+            </div>
+        </footer>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>
